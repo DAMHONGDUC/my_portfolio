@@ -1,8 +1,17 @@
+import { MainContainer, MainTitle } from "./home.style";
+
 const Home = () => {
   return (
-    <div>
-      <label>home</label>
-    </div>
+    <MainContainer>
+      <MainTitle>hom2e</MainTitle>
+      <MainTitle>hom2e</MainTitle>
+      <MainTitle>hom2e</MainTitle>
+      <MainTitle>hom2e</MainTitle>
+      <MainTitle>hom2e</MainTitle>
+      <MainTitle>hom2e</MainTitle>
+      <MainTitle>hom2e</MainTitle>
+      <MainTitle>hoddddm2e</MainTitle>
+    </MainContainer>
   );
 };
 
