@@ -1,8 +1,13 @@
+import { Wrapper, Title } from "./Home.styled";
+
 const Home = () => {
   return (
-    <div>
-      <label>hello</label>
-    </div>
+    <Wrapper>
+      <Title>Hello World!</Title>
+    </Wrapper>
+    // <div>
+    //   <label>hello</label>
+    // </div>
   );
 };
 
