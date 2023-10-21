@@ -1,0 +1,77 @@
+stages:
+  - build
+  - deploy
+
+.ssh_helper: &ssh_helper |
+  function ssh_init() {
+      SSH_PRIVATE_KEY="$1"
+      SSH_KNOWN_HOSTS="$2"
+      which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )
+      eval $(ssh-agent -s)
+      echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+      mkdir -p ~/.ssh
+      chmod 700 ~/.ssh
+      ssh-keyscan -H "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+      chmod 644 ~/.ssh/known_hosts
+  }
+
+  function ssh_run() {
+      USER=$1
+      HOST=$2
+      PKEY=$3
+      GIT_BRANCH=$4
+      PROJECT_PATH=$5
+      ssh_init "$PKEY" $HOST
+      ssh $USER@$HOST "
+        cd $PROJECT_PATH
+        git checkout -- .
+        git pull
+        git checkout $GIT_BRANCH
+        yarn
+        yarn lint -- --fix
+        yarn build
+        ~/.yarn/bin/pm2 restart $PROJECT_PATH
+      "
+  }
+
+.build: &build
+  stage: build
+  cache:
+    key: ${CI_ENVIRONMENT_SLUG}
+    paths:
+      - node_modules/
+  script:
+    - yarn
+    - yarn lint -- --fix
+    - yarn lint
+    - yarn build
+  only:
+    - master
+
+.deploy: &deploy
+  stage: deploy
+  before_script:
+    - *ssh_helper
+  script:
+    - ssh_run "ubuntu" "$HOST" "$SSH_KEY" "master" $PROJECT_PATH
+
+.staging: &staging
+  environment: staging
+  variables:
+    HOST: $HOST_STAG
+    SSH_KEY: $SSH_PRIVATE_KEY_STAG
+    # add project path
+    PROJECT_PATH: tgl-next-template
+  # only:
+  #   - develop
+  #   - /^release\/.*/
+  #   - /^hotfix\/.*/
+ only:
+    - master
+#staging
+staging:
+  <<: *deploy
+  environment: staging
+  variables:
+    HOST: $STAGING_HOST
+    SSH_KEY: $STAGING_SSH_PRIVATE_KEY

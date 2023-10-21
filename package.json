@@ -1,24 +1,56 @@
 {
-  "name": "my_portfolio",
+  "name": "tgl-next-template",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3009",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3009",
     "lint": "next lint"
   },
+  "postinstall": "husky install",
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "13.5.5"
+    "@ant-design/cssinjs": "^1.16.1",
+    "@apollo/client": "^3.8.1",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@types/antd": "^1.0.0",
+    "@types/js-cookie": "^3.0.3",
+    "@types/node": "20.4.9",
+    "@types/react": "18.2.19",
+    "@types/react-dom": "18.2.7",
+    "@types/styled-components": "^5.1.26",
+    "antd": "^5.8.2",
+    "graphql": "^16.7.1",
+    "graphql-ws": "^5.14.0",
+    "i18next": "^23.4.3",
+    "js-cookie": "^3.0.5",
+    "moment": "^2.29.4",
+    "next": "13.4.13",
+    "next-i18next": "^14.0.0",
+    "next-redux-wrapper": "^8.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-i18next": "^13.0.3",
+    "react-redux": "^8.1.2",
+    "sass": "^1.64.2",
+    "styled-components": "^6.0.7",
+    "typescript": "5.1.6"
+  },
+  "resolutions": {
+    "styled-components": "^5"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "13.5.5"
+    "@commitlint/cli": "^17.7.0",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "babel-plugin-styled-components": "^2.1.4",
+    "commitlint": "^17.7.0",
+    "eslint": "^8.46.0",
+    "eslint-config-next": "^13.4.13",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "prettier": "^3.0.1"
   }
 }
