@@ -1,14 +1,9 @@
-import authenSlice from '@/features/admin/authenSlice'
-import counterSlice from '@/features/count/countSlice'
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
 
 // import { createWrapper } from 'next-redux-wrapper';
 
 export const store = configureStore({
-  reducer: {
-    counter: counterSlice,
-    adminLogin: authenSlice,
-  },
+  reducer: {},
   devTools: true,
 })
 
