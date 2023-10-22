@@ -1,10 +1,11 @@
-import { Container } from './Home.style'
+import { HomeContainer } from './Home.style'
+import HeroSection from '@/components/HeroSection/HeroSection'
 
 const Home = () => {
   return (
-    <Container>
-      <label>hello</label>
-    </Container>
+    <HomeContainer>
+      <HeroSection />
+    </HomeContainer>
   )
 }
 
