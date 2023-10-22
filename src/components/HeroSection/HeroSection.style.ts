@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Typography } from 'antd'
+import { Typography, Button } from 'antd'
 
 const { Text } = Typography
 
@@ -85,4 +85,8 @@ export const WavingSpan = styled.span`
       transform: rotate(0deg);
     }
   }
+`
+
+export const SocialButton = styled(Button)`
+  padding: 4px 5px;
 `
