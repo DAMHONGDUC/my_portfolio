@@ -8,6 +8,7 @@ import nextI18nextConfig from '../../next-i18next.config'
 import { ApolloProvider } from '@apollo/client'
 import { client } from '@/configs/apollo-client'
 import { GlobalStyle } from '@/styles/theme/global.style'
+import RootLayout from '@/layout'
 
 const WrappedApp = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
@@ -21,7 +22,9 @@ const WrappedApp = ({ Component, pageProps }: AppProps) => {
   return (
     <Provider store={store}>
       <ApolloProvider client={client}>
-        <Component {...pageProps} />
+        <RootLayout>
+          <Component {...pageProps} />
+        </RootLayout>
         <GlobalStyle />
       </ApolloProvider>
     </Provider>
