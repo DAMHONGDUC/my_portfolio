@@ -55,7 +55,7 @@ export const WavingSpan = styled.span`
   margin: 0px 0px 0px 1rem;
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
   animation-duration: 2.5s; /* Change to speed up or slow down */
-  animation-iteration-count: 2; /* Never stop waving :) */
+  animation-iteration-count: 1; /* Never stop waving :) */
   transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
 
