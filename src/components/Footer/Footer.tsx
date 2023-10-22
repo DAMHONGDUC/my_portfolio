@@ -1,8 +1,12 @@
+import { FooterCustom, FooterContainer } from './Footer.style'
+
 const Footer = () => {
   return (
-    <div style={{ width: '100%', backgroundColor: '#f00' }}>
-      <label>Footer</label>
-    </div>
+    <FooterCustom>
+      <FooterContainer>
+        <label style={{ color: '#f00' }}>Footer</label>
+      </FooterContainer>
+    </FooterCustom>
   )
 }
 

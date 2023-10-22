@@ -3,7 +3,14 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Home from '@/features/home/Home'
 
 const HomePage: NextPage = () => {
-  return <Home />
+  return (
+    <>
+      <Home />
+      <Home />
+      <Home />
+      <Home />
+    </>
+  )
 }
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
