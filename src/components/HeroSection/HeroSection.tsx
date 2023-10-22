@@ -69,7 +69,7 @@ const HeroSection = () => {
 
             <RowContainer>
               <ActiveIcon />
-              <Typography>{USER_INFO.HERO_SECTION.STATUS}</Typography>
+              <SubTitle>{USER_INFO.HERO_SECTION.STATUS}</SubTitle>
             </RowContainer>
           </ColumnContainer>
 

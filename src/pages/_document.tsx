@@ -5,7 +5,7 @@ import type { DocumentContext } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
 const MyDocument = () => (
-  <Html lang='ja'>
+  <Html lang='vi'>
     <Head />
     <body>
       <Main />
