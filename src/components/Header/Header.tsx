@@ -1,13 +1,18 @@
 import { HeaderCustom, HeaderContainer } from './Header.style'
-import useScroll from '@/hooks/useScroll'
+import Link from 'next/link'
+import { Typography } from 'antd'
+
+const { Text } = Typography
 
 const Header = () => {
-  const scrolled = useScroll(40)
+  const Logo = () => <Text style={{ color: '#f00' }}>{'<SS />'}</Text>
 
   return (
     <HeaderCustom>
       <HeaderContainer>
-        <label style={{ color: '#f00' }}>header</label>
+        <Link href='/'>
+          <Logo />
+        </Link>
       </HeaderContainer>
     </HeaderCustom>
   )

@@ -10,7 +10,6 @@ import {
   WavingSpan,
   SocialButton,
 } from './HeroSection.style'
-import { Typography } from 'antd'
 import ImageWithShadow from '../ImageWithShadow/ImageWithShadow'
 import { USER_INFO } from '@/constants'
 import { theme } from '../../styles/theme/theme'
