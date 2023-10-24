@@ -1,5 +1,4 @@
 import { ApolloLink, DefaultContext } from '@apollo/client'
-import Cookies from 'js-cookie'
 
 export const authLink = new ApolloLink((operation, forward) => {
   const getToken = {}
