@@ -6,7 +6,6 @@ import {
   NavLinkItem,
   RowContainer,
   DownloadCVButton,
-  DownLoadCVText,
 } from './Header.style'
 import Link from 'next/link'
 import { USER_INFO } from '@/constants'
