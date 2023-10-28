@@ -16,11 +16,11 @@ interface IProps {}
 const AboutMeSection: FC<IProps> = ({}) => {
   return (
     <SectionContainer
-      style={{ backgroundColor: theme.colors.secondary, paddingTop: '4rem' }}
-      id={'about-me'}
+      style={{ backgroundColor: theme.colors.secondary }}
+      id={USER_INFO.ABOUT_ME_SECTION.id}
     >
       <ColumnContainer style={{ gap: '3rem' }}>
-        <Tag title={'About me'} />
+        <Tag title={USER_INFO.ABOUT_ME_SECTION.tag} />
 
         <RowContainer style={{ justifyContent: 'space-between' }}>
           <ImageWithShadow localSource={USER_INFO.HERO_SECTION.IMAGE} />

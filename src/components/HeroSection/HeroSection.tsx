@@ -50,7 +50,7 @@ const SOCIALS_LINK: ISocialLink[] = [
 
 const HeroSection: FC<IProps> = ({}) => {
   return (
-    <SectionContainer id='hero'>
+    <SectionContainer id={USER_INFO.HERO_SECTION.ID}>
       <Container>
         <ContentContainer>
           <ColumnContainer>

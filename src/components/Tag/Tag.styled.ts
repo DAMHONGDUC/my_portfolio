@@ -6,8 +6,8 @@ const { Text } = Typography
 
 export const CustomText = styled(Text)`
   background-color: ${theme.colors.grey200};
-  padding: 0.7rem;
-  border-radius: 0.5rem;
+  padding: 0.7rem 1rem;
+  border-radius: 0.9rem;
   font-size: ${theme.fontSize.h6}px;
   color: ${theme.colors.text.color0};
 `
