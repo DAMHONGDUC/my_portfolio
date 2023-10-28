@@ -17,7 +17,7 @@ import ActiveIcon from '../ActiveIcon/ActiveIcon'
 import { Github, Facebook, Instagram, Figma } from 'lucide-react'
 import { ISocialLink } from '@/interfaces/socialLink'
 import { openURLInNewTab } from '@/utils'
-import { ContentText } from '../Layout/ContentText/ContentText.style'
+import { ContentText } from '../Layout/Text/general'
 
 interface IProps {}
 

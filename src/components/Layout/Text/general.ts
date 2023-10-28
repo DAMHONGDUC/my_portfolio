@@ -10,3 +10,9 @@ export const ContentText = styled(Text)`
   font-weight: 400;
   text-align: justify;
 `
+
+export const TitleText = styled(Text)`
+  color: ${theme.colors.text.color0};
+  font-size: ${theme.fontSize.h0}px;
+  font-weight: 500;
+`

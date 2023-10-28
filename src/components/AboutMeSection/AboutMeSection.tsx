@@ -2,14 +2,11 @@ import { FC } from 'react'
 import SectionContainer from '../Layout/Container/SectionContainer'
 import { theme } from '@/styles/theme/theme'
 import Tag from '../Tag/Tag'
-import {
-  ColumnContainer,
-  RowContainer,
-  TitleText,
-} from './AboutMeSection.style'
+import { ColumnContainer, RowContainer } from './AboutMeSection.style'
 import ImageWithShadow from '../ImageWithShadow/ImageWithShadow'
 import { USER_INFO } from '@/constants'
-import { ContentText } from '../Layout/ContentText/ContentText.style'
+import { ContentText } from '../Layout/Text/general'
+import { TitleText } from '../Layout/Text/general'
 
 interface IProps {}
 
