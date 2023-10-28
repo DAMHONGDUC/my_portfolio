@@ -1,14 +1,13 @@
 import { GetServerSideProps, NextPage } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Home from '@/features/home/Home'
+import AboutMeSection from '@/components/AboutMeSection/AboutMeSection'
 
 const HomePage: NextPage = () => {
   return (
     <>
       <Home />
-      <Home />
-      <Home />
-      <Home />
+      <AboutMeSection />
     </>
   )
 }

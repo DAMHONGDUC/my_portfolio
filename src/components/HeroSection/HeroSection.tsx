@@ -1,3 +1,4 @@
+import { FC } from 'react'
 import SectionContainer from '../Layout/Container/SectionContainer'
 import { MapPin } from 'lucide-react'
 import {
@@ -17,6 +18,8 @@ import ActiveIcon from '../ActiveIcon/ActiveIcon'
 import { Github, Facebook, Instagram, Figma } from 'lucide-react'
 import { ISocialLink } from '@/interfaces/socialLink'
 import { openURLInNewTab } from '@/utils'
+
+interface IProps {}
 
 const SOCIALS_LINK: ISocialLink[] = [
   {
@@ -45,7 +48,7 @@ const SOCIALS_LINK: ISocialLink[] = [
   },
 ]
 
-const HeroSection = () => {
+const HeroSection: FC<IProps> = ({}) => {
   return (
     <SectionContainer id='hero'>
       <Container>
