@@ -17,7 +17,7 @@ export const USER_INFO = {
     NAV_LINKS: [
       {
         label: 'About',
-        href: '#about',
+        href: '#about-me',
       },
       {
         label: 'Work',

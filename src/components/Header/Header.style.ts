@@ -16,6 +16,7 @@ export const HeaderCustom = styled.header<{ scrolled: boolean }>`
     props.scrolled
       ? `1px solid ${theme.colors.header.borderColor}`
       : 'transparent'};
+  opacity: ${(props) => (props.scrolled ? `0.95` : '1')};
 `
 export const HeaderContainer = styled.div`
   display: flex;
