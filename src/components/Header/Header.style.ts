@@ -57,3 +57,8 @@ export const NavLinkItem = styled(Text)`
     color: ${theme.colors.text.color1Hover};
   }
 `
+
+export const RowContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`
