@@ -16,6 +16,9 @@ export const theme = {
       blurColor: '',
       borderColor: '#F3F4F6',
     },
+    button: {
+      hoverColor: '#c9c7c7',
+    },
   },
   fontSize: {
     h0: 26,

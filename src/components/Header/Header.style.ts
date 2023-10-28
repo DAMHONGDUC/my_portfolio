@@ -1,16 +1,19 @@
 import styled from 'styled-components'
 import { theme } from '../../styles/theme/theme'
-import { Typography } from 'antd'
+import { Button, Typography } from 'antd'
 
 const { Text } = Typography
 
 export const HeaderCustom = styled.header<{ scrolled: boolean }>`
+  display: flex;
+  justify-content: center;
+  background-color: ${theme.colors.primary};
+  padding: 1rem;
+  width: 100%;
+
   position: sticky;
   top: 0px;
   z-index: 999;
-  width: 100%;
-  background-color: ${theme.colors.primary};
-  padding: 1rem;
 
   border-bottom: ${(props) =>
     props.scrolled
@@ -23,7 +26,7 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  padding: 0rem 2rem 0rem 2rem;
+  padding: 0rem 1rem 0rem 1rem;
   width: 100%;
   max-width: 80rem;
 
@@ -62,4 +65,20 @@ export const NavLinkItem = styled(Text)`
 export const RowContainer = styled.div`
   display: flex;
   flex-direction: row;
+`
+
+export const DownloadCVButton = styled(Button)`
+  background-color: ${theme.colors.black};
+  color: ${theme.colors.white};
+  font-size: ${theme.fontSize.h5}px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  &:hover {
+    color: ${theme.colors.button.hoverColor} !important;
+    border-color: ${theme.colors.button.hoverColor} !important;
+  }
 `

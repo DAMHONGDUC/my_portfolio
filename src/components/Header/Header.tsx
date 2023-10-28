@@ -5,6 +5,8 @@ import {
   NavLinkContainer,
   NavLinkItem,
   RowContainer,
+  DownloadCVButton,
+  DownLoadCVText,
 } from './Header.style'
 import Link from 'next/link'
 import { USER_INFO } from '@/constants'
@@ -15,6 +17,8 @@ import { Divider } from 'antd'
 
 const Header = () => {
   const scrolled = useScroll(40)
+
+  const handleDownloadCV = () => {}
 
   return (
     <HeaderCustom scrolled={scrolled}>
@@ -37,17 +41,22 @@ const Header = () => {
             </NavLinkContainer>
           </NavLinkWrapper>
 
+          <Divider
+            style={{
+              height: '2rem',
+              backgroundColor: theme.colors.secondary,
+            }}
+            type={'vertical'}
+          />
           <RowContainer
-            style={{ justifyContent: 'center', alignSelf: 'center' }}
+            style={{
+              gap: '0.5rem',
+            }}
           >
-            <Divider
-              style={{
-                height: '2rem',
-                backgroundColor: theme.colors.secondary,
-              }}
-              type={'vertical'}
-            />
             <ThemeSwitcher />
+            <DownloadCVButton onClick={handleDownloadCV}>
+              Download CV
+            </DownloadCVButton>
           </RowContainer>
         </RowContainer>
       </HeaderContainer>
