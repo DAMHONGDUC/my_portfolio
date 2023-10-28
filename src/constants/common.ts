@@ -1,3 +1,11 @@
+import LogoJavascript from '/public/images/logos/icon-javascript.svg'
+import LogoTypescript from '/public/images/logos/icon-typescript.svg'
+import LogoReact from '/public/images/logos/icon-react.svg'
+import LogoNextjs from '/public/images/logos/icon-nextjs.svg'
+import LogoNodejs from '/public/images/logos/icon-nodejs.svg'
+import LogoFigma from '/public/images/logos/icon-figma.svg'
+import LogoGit from '/public/images/logos/icon-git.svg'
+
 export const USER_INFO = {
   HERO_SECTION: {
     ID: 'hero',
@@ -58,5 +66,42 @@ export const USER_INFO = {
   SKILL_SECTION: {
     ID: 'skills',
     TAG: 'Skills',
+    SKILLS: [
+      {
+        label: 'Javascript',
+        logo: LogoJavascript,
+        url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+      },
+      {
+        label: 'Typescript',
+        logo: LogoTypescript,
+        url: 'https://www.typescriptlang.org/',
+      },
+      {
+        label: 'React Native',
+        logo: LogoReact,
+        url: 'https://react.dev/',
+      },
+      {
+        label: 'Next.js',
+        logo: LogoNextjs,
+        url: 'https://nextjs.org/',
+      },
+      {
+        label: 'Node.js',
+        logo: LogoNodejs,
+        url: 'https://nodejs.org/en',
+      },
+      {
+        label: 'Figma',
+        logo: LogoFigma,
+        url: 'https://www.figma.com/',
+      },
+      {
+        label: 'Git',
+        logo: LogoGit,
+        url: 'https://git-scm.com/',
+      },
+    ],
   },
 }

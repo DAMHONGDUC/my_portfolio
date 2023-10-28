@@ -15,7 +15,7 @@ import { USER_INFO } from '@/constants'
 import { theme } from '../../styles/theme/theme'
 import ActiveIcon from '../ActiveIcon/ActiveIcon'
 import { Github, Facebook, Instagram, Figma } from 'lucide-react'
-import { ISocialLink } from '@/interfaces/socialLink'
+import { ISocialLink } from '@/interfaces/i-socialLink'
 import { openURLInNewTab } from '@/utils'
 import { ContentText } from '../Layout/Text/general'
 
