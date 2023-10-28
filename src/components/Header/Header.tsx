@@ -1,18 +1,37 @@
-import { HeaderCustom, HeaderContainer } from './Header.style'
+import {
+  HeaderCustom,
+  HeaderContainer,
+  NavLinkWrapper,
+  NavLinkContainer,
+  NavLinkItem,
+} from './Header.style'
 import Link from 'next/link'
-import { Typography } from 'antd'
-
-const { Text } = Typography
+import { USER_INFO } from '@/constants'
+import { theme } from '@/styles/theme/theme'
+import useScroll from '@/hooks/useScroll'
 
 const Header = () => {
-  const Logo = () => <Text style={{ color: '#f00' }}>{'<SS />'}</Text>
+  const scrolled = useScroll(40)
 
   return (
-    <HeaderCustom>
+    <HeaderCustom scrolled={scrolled}>
       <HeaderContainer>
         <Link href='/'>
-          <Logo />
+          <NavLinkItem style={{ fontSize: theme.fontSize.h1 }}>
+            {USER_INFO.NAV_BAR.LOGO}
+          </NavLinkItem>
         </Link>
+        <NavLinkWrapper>
+          <NavLinkContainer>
+            {USER_INFO.NAV_BAR.NAV_LINKS.map((link, index) => (
+              <li key={index}>
+                <Link href={link.href}>
+                  <NavLinkItem>{link.label}</NavLinkItem>
+                </Link>
+              </li>
+            ))}
+          </NavLinkContainer>
+        </NavLinkWrapper>
       </HeaderContainer>
     </HeaderCustom>
   )

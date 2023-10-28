@@ -12,4 +12,25 @@ export const USER_INFO = {
       FIGMA: 'https://www.figma.com/@hongdduc',
     },
   },
+  NAV_BAR: {
+    LOGO: '<html>',
+    NAV_LINKS: [
+      {
+        label: 'About',
+        href: '#about',
+      },
+      {
+        label: 'Work',
+        href: '#work',
+      },
+      {
+        label: 'Testimonials',
+        href: '#testimonials',
+      },
+      {
+        label: 'Contact',
+        href: '#contact',
+      },
+    ],
+  },
 }

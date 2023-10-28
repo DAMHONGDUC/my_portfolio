@@ -1,16 +1,20 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
+
+interface IEventProps {
+  target: any
+}
 
 export default function useScroll(threshold: number) {
   const [scrolled, setScrolled] = useState(false)
 
-  const onScroll = useCallback(() => {
-    setScrolled((window.scrollY || window.pageYOffset) > threshold)
-  }, [threshold])
+  const handleScroll = ({ target }: IEventProps) => {
+    setScrolled(target.scrollTop > threshold)
+  }
 
   useEffect(() => {
-    window.addEventListener('scroll', onScroll)
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [onScroll])
+    document.body.addEventListener('scroll', handleScroll)
+    return () => document.body.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return scrolled
 }
