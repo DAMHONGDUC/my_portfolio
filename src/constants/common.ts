@@ -105,3 +105,5 @@ export const USER_INFO = {
     ],
   },
 }
+
+export const DOCUMENT_TITLE = 'Hong Duc | Portfolio'
