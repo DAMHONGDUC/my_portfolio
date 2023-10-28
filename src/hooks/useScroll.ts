@@ -1,14 +1,10 @@
 import { useEffect, useState } from 'react'
 
-interface IEventProps {
-  target: any
-}
-
 export default function useScroll(threshold: number) {
   const [scrolled, setScrolled] = useState(false)
 
-  const handleScroll = ({ target }: IEventProps) => {
-    setScrolled(target.scrollTop > threshold)
+  const handleScroll = (event: Event) => {
+    setScrolled((event?.target as HTMLElement).scrollTop > threshold)
   }
 
   useEffect(() => {
