@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import { theme } from '../../../styles/theme/theme'
 
 export const SectionCustom = styled.section`
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   width: 100%;
   justify-content: center;
   align-items: center;
