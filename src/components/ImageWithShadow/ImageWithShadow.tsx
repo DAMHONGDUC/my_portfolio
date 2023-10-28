@@ -14,7 +14,15 @@ const ImageWithShadow: FC<IProps> = ({ localSource }) => {
   return (
     <ImageWrapper>
       <ImageContainer>
-        <CustomImage src={localSource} alt='Headshot of Sagar'></CustomImage>
+        <CustomImage
+          effect='blur'
+          wrapperProps={{
+            style: { transitionDelay: '1s' },
+          }}
+          // src={'/images/sagar-headshot.jpg'}
+          src={localSource}
+          alt='Headshot of Sagar'
+        />
         <ShadowContainer />
       </ImageContainer>
     </ImageWrapper>

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Image from 'next/image'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 export const ImageWrapper = styled.div`
   display: flex;
@@ -22,7 +22,7 @@ export const ImageContainer = styled.div`
   }
 `
 
-export const CustomImage = styled(Image)`
+export const CustomImage = styled(LazyLoadImage)`
   object-fit: cover;
   border: 8px solid #ffffff;
   z-index: 10;
