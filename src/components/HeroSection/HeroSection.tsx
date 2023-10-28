@@ -52,8 +52,6 @@ const HeroSection: FC<IProps> = ({}) => {
   return (
     <SectionContainer id='hero'>
       <Container>
-        <ImageWithShadow localSource={USER_INFO.HERO_SECTION.IMAGE} />
-
         <ContentContainer>
           <ColumnContainer>
             <MainTitle>
@@ -86,6 +84,7 @@ const HeroSection: FC<IProps> = ({}) => {
             ))}
           </RowContainer>
         </ContentContainer>
+        <ImageWithShadow localSource={USER_INFO.HERO_SECTION.IMAGE} />
       </Container>
     </SectionContainer>
   )

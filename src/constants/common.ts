@@ -33,4 +33,19 @@ export const USER_INFO = {
       },
     ],
   },
+  ABOUT_ME_SECTION: {
+    title: 'Curious about me? Here you have it:',
+    content: `who specializes in full stack development (React.js & Node.js). I
+              am enthusiastic about bringing the technical and visual aspects of
+              digital products to life. User experience, pixel perfect design,
+              and writing clear, readable, highly performant code matters to me.
+              who specializes in full stack development (React.js & Node.js). I
+              am enthusiastic about bringing the technical and visual aspects of
+              digital products to life. User experience, pixel perfect design,
+              and writing clear, readable, highly performant code matters to me.
+              who specializes in full stack development (React.js & Node.js). I
+              am enthusiastic about bringing the technical and visual aspects of
+              digital products to life. User experience, pixel perfect design,
+              and writing clear, readable, highly performant code matters to me.`,
+  },
 }

@@ -40,7 +40,13 @@ const Header = () => {
           <RowContainer
             style={{ justifyContent: 'center', alignSelf: 'center' }}
           >
-            <Divider style={{ height: '2rem' }} type={'vertical'} />
+            <Divider
+              style={{
+                height: '2rem',
+                backgroundColor: theme.colors.secondary,
+              }}
+              type={'vertical'}
+            />
             <ThemeSwitcher />
           </RowContainer>
         </RowContainer>

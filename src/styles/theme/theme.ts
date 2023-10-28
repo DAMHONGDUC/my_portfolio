@@ -2,11 +2,13 @@ export const theme = {
   colors: {
     primary: '#FFFFFF',
     secondary: '#F9FAFB',
+    grey200: '#e5e7eb',
     red: '#f00',
     white: '#ffffff',
     black: '#000000',
     success: '#02b784',
     text: {
+      color0: '#000000',
       color1: '#4b5563',
       color1Hover: '#111827',
     },
