@@ -32,6 +32,10 @@ export const USER_INFO = {
         href: '#contact',
       },
     ],
+    DOWNLOAD_CV: {
+      title: 'Download CV',
+      file: '/files/file-sample_100kB.docx',
+    },
   },
   ABOUT_ME_SECTION: {
     title: 'Curious about me? Here you have it:',

@@ -17,7 +17,9 @@ import { Divider } from 'antd'
 const Header = () => {
   const scrolled = useScroll(40)
 
-  const handleDownloadCV = () => {}
+  const handleDownloadCV = () => {
+    window?.open(USER_INFO.NAV_BAR.DOWNLOAD_CV.file, '_blank')
+  }
 
   return (
     <HeaderCustom scrolled={scrolled}>
@@ -54,7 +56,7 @@ const Header = () => {
           >
             <ThemeSwitcher />
             <DownloadCVButton onClick={handleDownloadCV}>
-              Download CV
+              {USER_INFO.NAV_BAR.DOWNLOAD_CV.title}
             </DownloadCVButton>
           </RowContainer>
         </RowContainer>
