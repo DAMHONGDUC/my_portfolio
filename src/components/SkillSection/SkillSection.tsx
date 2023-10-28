@@ -8,9 +8,9 @@ interface IProps {}
 
 const SkillSection: FC<IProps> = ({}) => {
   return (
-    <SectionContainer id={USER_INFO.SKILL_SECTION.id}>
+    <SectionContainer id={USER_INFO.SKILL_SECTION.ID}>
       <ColumnContainer>
-        <Tag title={USER_INFO.SKILL_SECTION.tag} />
+        <Tag title={USER_INFO.SKILL_SECTION.TAG} />
       </ColumnContainer>
     </SectionContainer>
   )

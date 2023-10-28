@@ -14,16 +14,16 @@ const AboutMeSection: FC<IProps> = ({}) => {
   return (
     <SectionContainer
       style={{ backgroundColor: theme.colors.secondary }}
-      id={USER_INFO.ABOUT_ME_SECTION.id}
+      id={USER_INFO.ABOUT_ME_SECTION.ID}
     >
       <ColumnContainer style={{ gap: '3rem' }}>
-        <Tag title={USER_INFO.ABOUT_ME_SECTION.tag} />
+        <Tag title={USER_INFO.ABOUT_ME_SECTION.TAG} />
 
         <RowContainer style={{ justifyContent: 'space-between' }}>
           <ImageWithShadow localSource={USER_INFO.HERO_SECTION.IMAGE} />
           <ColumnContainer>
-            <TitleText>{USER_INFO.ABOUT_ME_SECTION.title}</TitleText>
-            <ContentText>{USER_INFO.ABOUT_ME_SECTION.content}</ContentText>
+            <TitleText>{USER_INFO.ABOUT_ME_SECTION.TITLE}</TitleText>
+            <ContentText>{USER_INFO.ABOUT_ME_SECTION.CONTENT}</ContentText>
           </ColumnContainer>
         </RowContainer>
       </ColumnContainer>

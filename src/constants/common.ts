@@ -39,10 +39,10 @@ export const USER_INFO = {
     },
   },
   ABOUT_ME_SECTION: {
-    id: 'about-me',
-    tag: 'About me',
-    title: 'Curious about me? Here you have it:',
-    content: `who specializes in full stack development (React.js & Node.js). I
+    ID: 'about-me',
+    TAG: 'About me',
+    TITLE: 'Curious about me? Here you have it:',
+    CONTENT: `who specializes in full stack development (React.js & Node.js). I
               am enthusiastic about bringing the technical and visual aspects of
               digital products to life. User experience, pixel perfect design,
               and writing clear, readable, highly performant code matters to me.
@@ -56,7 +56,7 @@ export const USER_INFO = {
               and writing clear, readable, highly performant code matters to me.`,
   },
   SKILL_SECTION: {
-    id: 'skills',
-    tag: 'Skills',
+    ID: 'skills',
+    TAG: 'Skills',
   },
 }
