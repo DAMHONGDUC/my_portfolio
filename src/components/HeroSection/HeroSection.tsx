@@ -5,7 +5,6 @@ import {
   Container,
   ContentContainer,
   MainTitle,
-  SubTitle,
   ColumnContainer,
   RowContainer,
   WavingSpan,
@@ -18,6 +17,7 @@ import ActiveIcon from '../ActiveIcon/ActiveIcon'
 import { Github, Facebook, Instagram, Figma } from 'lucide-react'
 import { ISocialLink } from '@/interfaces/socialLink'
 import { openURLInNewTab } from '@/utils'
+import { ContentText } from '../Layout/ContentText/ContentText.style'
 
 interface IProps {}
 
@@ -58,18 +58,18 @@ const HeroSection: FC<IProps> = ({}) => {
               {USER_INFO.HERO_SECTION.MAIN_TITLE}
               <WavingSpan> 👋</WavingSpan>
             </MainTitle>
-            <SubTitle>{USER_INFO.HERO_SECTION.SUB_TITLE}</SubTitle>
+            <ContentText>{USER_INFO.HERO_SECTION.SUB_TITLE}</ContentText>
           </ColumnContainer>
 
           <ColumnContainer>
             <RowContainer>
               <MapPin color={theme.colors.black} size={24} />
-              <SubTitle> {USER_INFO.HERO_SECTION.LOCATION}</SubTitle>
+              <ContentText> {USER_INFO.HERO_SECTION.LOCATION}</ContentText>
             </RowContainer>
 
             <RowContainer>
               <ActiveIcon />
-              <SubTitle>{USER_INFO.HERO_SECTION.STATUS}</SubTitle>
+              <ContentText>{USER_INFO.HERO_SECTION.STATUS}</ContentText>
             </RowContainer>
           </ColumnContainer>
 

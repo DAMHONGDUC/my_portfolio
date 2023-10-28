@@ -43,13 +43,6 @@ export const MainTitle = styled(Text)`
   font-size: 3rem;
   line-height: 1;
 `
-export const SubTitle = styled(Text)`
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 400;
-  text-align: justify;
-  margin: 0px 0px 0px 3px;
-`
 
 export const WavingSpan = styled.span`
   margin: 0px 0px 0px 1rem;
