@@ -78,14 +78,14 @@ export const USER_INFO = {
         url: 'https://www.typescriptlang.org/',
       },
       {
-        label: 'React Native',
-        logo: LogoReact,
-        url: 'https://react.dev/',
-      },
-      {
         label: 'Next.js',
         logo: LogoNextjs,
         url: 'https://nextjs.org/',
+      },
+      {
+        label: 'React Native',
+        logo: LogoReact,
+        url: 'https://react.dev/',
       },
       {
         label: 'Node.js',
@@ -103,6 +103,10 @@ export const USER_INFO = {
         url: 'https://git-scm.com/',
       },
     ],
+  },
+  EXPERIENCE_SECTION: {
+    ID: 'experience',
+    TAG: 'Experience',
   },
 }
 
