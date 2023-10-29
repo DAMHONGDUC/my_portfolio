@@ -19,6 +19,10 @@ export const theme = {
     button: {
       hoverColor: '#c9c7c7',
     },
+    card: {
+      boxShadow1: '#0000001a',
+      boxShadow2: '#0000000f',
+    },
   },
   fontSize: {
     h0: 26,

@@ -6,6 +6,10 @@ import LogoNodejs from '/public/images/logos/icon-nodejs.svg'
 import LogoFigma from '/public/images/logos/icon-figma.svg'
 import LogoGit from '/public/images/logos/icon-git.svg'
 
+import LogoUpwork from '/public/images/logos/logo-upwork.svg'
+import LogoGreenApex from '/public/images/logos/logo-greenapex.svg'
+import LogoDotnpixel from '/public/images/logos/logo-dotnpixel.svg'
+
 export const USER_INFO = {
   HERO_SECTION: {
     ID: 'hero',
@@ -107,6 +111,41 @@ export const USER_INFO = {
   EXPERIENCE_SECTION: {
     ID: 'experience',
     TAG: 'Experience',
+    EXPERIENCES: [
+      {
+        logo: LogoUpwork,
+        logoAlt: 'Upwork logo',
+        position: 'Independent Freelancer',
+        startDate: '2021',
+        endDate: 'now',
+        summary: [
+          'Worked for various clients like Fiskil, Shosho, Crowe MacKay LLP.',
+          'Worked with a variety of technologies, including React, Next.js, Typescript, Express.js, PostgreSQL, Tailwindcss, Mui, Firebase, Storybook, Cypress, and others.',
+        ],
+      },
+      {
+        logo: LogoGreenApex,
+        logoAlt: 'Greenapex logo',
+        position: 'Team Lead',
+        startDate: '2020',
+        endDate: '2021',
+        summary: [
+          'Acted as team lead in different projects.',
+          'Brainstormed new ideas & gathered requirements for internal projects.',
+          'Designed architecture of different projects (frontend + backend).',
+          'Worked on enterprise-level projects for a variety of clients.',
+          'Handled sprint planning & task distribution.',
+        ],
+      },
+      {
+        logo: LogoDotnpixel,
+        logoAlt: 'Dotnpixel logo',
+        position: 'Full Stack Developer',
+        startDate: '2020',
+        endDate: '2021',
+        summary: ['Worked as a full stack developer (React / Laravel).'],
+      },
+    ],
   },
 }
 
