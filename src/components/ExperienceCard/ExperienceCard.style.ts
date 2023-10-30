@@ -7,14 +7,12 @@ import { Typography } from 'antd'
 const { Text } = Typography
 
 export const RowContainer = styled.div`
-  flex: 1;
   display: flex;
   flex-direction: row;
   gap: 5rem;
 `
 
 export const ColumnContainer = styled.div`
-  flex: 1;
   display: flex;
   flex-direction: column;
 `
@@ -26,7 +24,9 @@ export const MainContainer = styled(Card)`
   box-shadow: 0 4px 6px -1px ${theme.colors.card.boxShadow1};
 `
 
-export const CustomImage = styled(Image)``
+export const CustomImage = styled(Image)`
+  width: 5rem;
+`
 
 export const ContentContainer = styled.ul`
   display: flex;

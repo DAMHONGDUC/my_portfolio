@@ -19,7 +19,13 @@ const ExperienceSection: FC<IProps> = ({}) => {
 
         <ColumnContainer style={{ alignItems: 'center' }}>
           {USER_INFO.EXPERIENCE_SECTION.EXPERIENCES.map((e, index) => (
-            <ExperienceCard {...e} key={index} />
+            <ExperienceCard
+              data={e}
+              key={index}
+              isLast={
+                index === USER_INFO.EXPERIENCE_SECTION.EXPERIENCES.length - 1
+              }
+            />
           ))}
         </ColumnContainer>
       </ColumnContainer>

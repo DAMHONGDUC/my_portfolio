@@ -11,28 +11,25 @@ import {
 import { TitleText } from '../Layout/Text/general'
 import { useWindowSize } from '@/hooks/useWindowSize'
 import { IExperienceDetails } from '@/interfaces/I-experienceDetails'
-import { Divider } from 'antd'
 
-const ExperienceCard: FC<IExperienceDetails> = ({
-  logo,
-  summary,
-  logoAlt,
-  position,
-  startDate,
-  endDate,
-}) => {
+interface IProps {
+  data: IExperienceDetails
+  isLast: boolean
+}
+
+const ExperienceCard: FC<IProps> = ({ data, isLast }) => {
   const { windowWidth } = useWindowSize()
 
-  return (
-    <MainContainer>
-      <RowContainer>
-        <CustomImage
-          style={{ width: windowWidth / 6 }}
-          src={logo}
-          alt={logoAlt}
-        />
+  const { logo, summary, logoAlt, position, startDate, endDate } = data
 
-        <ColumnContainer style={{ width: windowWidth / 3, gap: '0.7rem' }}>
+  return (
+    <MainContainer
+      style={{ width: windowWidth * 0.6, marginBottom: isLast ? 0 : '2rem' }}
+    >
+      <RowContainer>
+        <CustomImage src={logo} alt={logoAlt} />
+
+        <ColumnContainer style={{ gap: '0.7rem', flex: 1 }}>
           <TitleText>{position}</TitleText>
           <ContentContainer>
             {summary.map((e, index) => (
