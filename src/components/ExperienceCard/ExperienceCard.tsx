@@ -10,7 +10,7 @@ import {
 } from './ExperienceCard.style'
 import { TitleText } from '../Layout/Text/general'
 import { useWindowSize } from '@/hooks/useWindowSize'
-import { IExperienceDetails } from '@/interfaces/I-experienceDetails'
+import { IExperienceDetails } from '@/interfaces/i-experienceDetails'
 
 interface IProps {
   data: IExperienceDetails

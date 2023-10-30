@@ -4,7 +4,7 @@ export interface IExperienceDetails {
   logo: string | StaticImageData
   logoAlt: string
   position: string
-  startDate: Date
-  endDate?: Date
+  startDate: string
+  endDate?: string
   summary: string[]
 }
