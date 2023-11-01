@@ -1,9 +1,34 @@
 import { GetServerSideProps, NextPage } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import HeroSection from '@/components/HeroSection/HeroSection'
-import AboutMeSection from '@/components/AboutMeSection/AboutMeSection'
-import SkillSection from '@/components/SkillSection/SkillSection'
-import ExperienceSection from '@/components/ExperienceSection/ExperienceSection'
+import dynamic from 'next/dynamic'
+
+const HeroSection = dynamic(
+  () => import('@/components/HeroSection/HeroSection'),
+  {
+    ssr: false,
+  },
+)
+
+const AboutMeSection = dynamic(
+  () => import('@/components/AboutMeSection/AboutMeSection'),
+  {
+    ssr: false,
+  },
+)
+
+const SkillSection = dynamic(
+  () => import('@/components/AboutMeSection/AboutMeSection'),
+  {
+    ssr: false,
+  },
+)
+
+const ExperienceSection = dynamic(
+  () => import('@/components/ExperienceSection/ExperienceSection'),
+  {
+    ssr: false,
+  },
+)
 
 const HomePage: NextPage = () => {
   return (
