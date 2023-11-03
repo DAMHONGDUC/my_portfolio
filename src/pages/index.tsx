@@ -17,7 +17,7 @@ const AboutMeSection = dynamic(
 )
 
 const SkillSection = dynamic(
-  () => import('@/components/AboutMeSection/AboutMeSection'),
+  () => import('@/components/SkillSection/SkillSection'),
   {
     ssr: false,
   },
