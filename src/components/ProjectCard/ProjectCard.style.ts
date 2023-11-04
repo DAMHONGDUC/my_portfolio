@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styled from 'styled-components'
 import { theme } from '../../styles/theme/theme'
+import { Button } from 'antd'
 
 export const RowContainer = styled.div`
   display: flex;
@@ -36,14 +37,32 @@ export const ContentContainer = styled.div`
   flex: 1;
   flex-direction: column;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   padding: 2rem;
-  gap: 1rem;
 `
 
 export const TechContainer = styled.div`
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
+`
+
+export const ColumnContainer = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+`
+
+export const LinkContainer = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 1rem;
+`
+
+export const ButtonCustom = styled(Button)`
+  padding: 0;
 `

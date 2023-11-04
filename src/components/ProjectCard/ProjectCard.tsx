@@ -5,12 +5,17 @@ import {
   ImageContainer,
   ContentContainer,
   TechContainer,
+  ColumnContainer,
+  LinkContainer,
+  ButtonCustom,
 } from './ProjectCard.style'
 import { useWindowSize } from '@/hooks/useWindowSize'
 import { ContentText, TitleText } from '../Layout/Text/general'
 import { IProjectDetails } from '@/interfaces/i-project-detail'
 import Tag from '../Tag/Tag'
 import { TagType } from '@/constants'
+import { Button } from 'antd'
+import { openURLInNewTab } from '@/utils'
 
 interface IProps {
   data: IProjectDetails
@@ -26,13 +31,27 @@ const ProjectCard: FC<IProps> = ({ data }) => {
       </ImageContainer>
 
       <ContentContainer>
-        <TitleText>{data.name}</TitleText>
-        <ContentText>{data.description}</ContentText>
-        <TechContainer>
-          {data.technologies.map((tech, index) => (
-            <Tag key={index} title={tech} type={TagType.CONTENT} />
-          ))}
-        </TechContainer>
+        <ColumnContainer>
+          <TitleText>{data.name}</TitleText>
+          <ContentText>{data.description}</ContentText>
+          <TechContainer>
+            {data.technologies.map((tech, index) => (
+              <Tag key={index} title={tech} type={TagType.CONTENT} />
+            ))}
+          </TechContainer>
+        </ColumnContainer>
+
+        <LinkContainer>
+          <ButtonCustom
+            type='link'
+            onClick={() => openURLInNewTab(data.source)}
+          >
+            Source
+          </ButtonCustom>
+          <ButtonCustom type='link' onClick={() => openURLInNewTab(data.demo)}>
+            Demo
+          </ButtonCustom>
+        </LinkContainer>
       </ContentContainer>
     </RowContainer>
   )

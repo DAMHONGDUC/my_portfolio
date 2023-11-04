@@ -6,4 +6,6 @@ export interface IProjectDetails {
   url: string
   previewImage: string | StaticImageData
   technologies: string[]
+  demo: string
+  source: string
 }
