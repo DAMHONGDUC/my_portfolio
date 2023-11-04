@@ -212,6 +212,14 @@ export const USER_INFO = {
       },
     ],
   },
+  CONTACT_SECTION: {
+    ID: 'contact',
+    TAG: 'contact',
+    EMAIL: 'hongduc001h@gmail.com',
+    PHONE: '0355211xxx',
+    TITLE: ` What’s next? Feel free to reach out to me if you are looking for a
+            developer, have a query, or simply want to connect.`,
+  },
 }
 
 export const DOCUMENT_TITLE = 'Hong Duc | Portfolio'

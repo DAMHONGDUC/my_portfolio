@@ -37,6 +37,13 @@ const ProjectSection = dynamic(
   },
 )
 
+const ContactSection = dynamic(
+  () => import('@/components/ContactSection/ContactSection'),
+  {
+    ssr: false,
+  },
+)
+
 const HomePage: NextPage = () => {
   return (
     <>
@@ -45,6 +52,7 @@ const HomePage: NextPage = () => {
       <SkillSection />
       <ExperienceSection />
       <ProjectSection />
+      <ContactSection />
     </>
   )
 }
