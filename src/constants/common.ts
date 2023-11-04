@@ -222,7 +222,7 @@ export const TagType = {
 }
 
 export const FOOTER = {
-  title: 'Hong Duc | Portfolio',
+  title: 'Portfolio',
   subTitle: 'Additional Contact',
   copyRight: '2023 | coded by Dam Hong Duc',
 }
