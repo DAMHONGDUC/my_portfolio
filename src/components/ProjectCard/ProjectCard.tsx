@@ -14,7 +14,6 @@ import { ContentText, TitleText } from '../Layout/Text/general'
 import { IProjectDetails } from '@/interfaces/i-project-detail'
 import Tag from '../Tag/Tag'
 import { TagType } from '@/constants'
-import { Button } from 'antd'
 import { openURLInNewTab } from '@/utils'
 
 interface IProps {

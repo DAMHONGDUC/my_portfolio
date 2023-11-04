@@ -1,4 +1,4 @@
-import { FOOTER, RELEASE_YEAR } from '@/constants'
+import { FOOTER } from '@/constants'
 import { ContentText, TitleText } from '../Layout/Text/general'
 import SocialLink from '../SocialLink/SocialLink'
 import { FooterCustom, FooterContainer, RowContainer } from './Footer.style'
