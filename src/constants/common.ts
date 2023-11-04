@@ -10,6 +10,10 @@ import LogoUpwork from '/public/images/logos/logo-upwork.svg'
 import LogoGreenApex from '/public/images/logos/logo-greenapex.svg'
 import LogoDotnpixel from '/public/images/logos/logo-dotnpixel.svg'
 
+import ProjectFiskil from '/public/images/project-fiskil.png'
+import ProjectWingie from '/public/images/project-wingie.png'
+import ProjectPepehousing from '/public/images/project-pepehousing.png'
+
 export const USER_INFO = {
   HERO_SECTION: {
     ID: 'hero',
@@ -147,6 +151,72 @@ export const USER_INFO = {
       },
     ],
   },
+  PROJECT_SECTION: {
+    ID: 'project',
+    TAG: 'Project',
+    PROJECT_DETAIL: [
+      {
+        name: 'Wingie',
+        description:
+          'A platform for comparing and finding affordable flights, as well as booking and purchasing tickets safely and easily in a few simple clicks.',
+        url: 'https://www.wingie.com',
+        previewImage: ProjectWingie,
+        technologies: [
+          'React',
+          'Typescript',
+          'React Bootstrap',
+          'Firebase',
+          'Express.js',
+          'PostgreSQL',
+          'Styled Components',
+          'Redux',
+        ],
+      },
+      {
+        name: 'Fiskil',
+        description:
+          'A platform for accessing real-time open banking and energy data to help you grow your business, backed with scalable back-end infrastructure.',
+        url: 'https://fiskil.com.au',
+        previewImage: ProjectFiskil,
+        technologies: [
+          'React',
+          'Next.js',
+          'Typescript',
+          'Tailwindcss',
+          'Material UI',
+          'Redux Toolkit',
+          'React Query',
+          'Express.js',
+          'PostgreSQL',
+          'Firebase',
+          'AWS Amplify',
+          'Cypress',
+          'Storybook',
+        ],
+      },
+      {
+        name: 'Pepehousing',
+        description:
+          'A platform for renting a flat or room in Poland. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.',
+        url: 'https://pepehousing.com',
+        previewImage: ProjectPepehousing,
+        technologies: [
+          'React',
+          'Next.js',
+          'Typescript',
+          'Tailwindcss',
+          'Redux Toolkit',
+          'React Query',
+          'Storybook',
+        ],
+      },
+    ],
+  },
 }
 
 export const DOCUMENT_TITLE = 'Hong Duc | Portfolio'
+
+export const TagType = {
+  HEADING: 0,
+  CONTENT: 1,
+}
