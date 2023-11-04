@@ -4,7 +4,7 @@ import { TagType } from '@/constants'
 
 interface IProps {
   title: string
-  type: number
+  type?: number
 }
 
 const Tag: FC<IProps> = ({ title, type = TagType.HEADING }) => {
