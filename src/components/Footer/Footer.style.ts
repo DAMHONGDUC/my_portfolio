@@ -8,7 +8,17 @@ export const FooterCustom = styled.footer`
 `
 
 export const FooterContainer = styled.div`
-  gap: 0.25rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+`
+
+export const RowContainer = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: row;
   align-items: center;
 `

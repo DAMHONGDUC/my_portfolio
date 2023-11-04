@@ -220,3 +220,9 @@ export const TagType = {
   HEADING: 0,
   CONTENT: 1,
 }
+
+export const FOOTER = {
+  title: 'Hong Duc | Portfolio',
+  subTitle: 'Additional Contact',
+  copyRight: '2023 | coded by Dam Hong Duc',
+}
