@@ -33,6 +33,7 @@ export const theme = {
       color0: '#000000',
       color1: '#4b5563',
       color1Hover: '#111827',
+      color0Hover: '#171717',
     },
     header: {
       blurColor: '',

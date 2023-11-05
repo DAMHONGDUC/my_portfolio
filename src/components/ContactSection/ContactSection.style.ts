@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import { Button } from 'antd'
+import { Typography } from 'antd'
+import { theme } from '../../styles/theme/theme'
 
 export const ColumnContainer = styled.div`
   display: flex;
@@ -18,9 +19,14 @@ export const RowContainer = styled.div`
   align-items: center;
 `
 
-export const CustomButton = styled(Button)`
-  padding: 20px 4px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+export const ContactText = styled(Typography)`
+  color: ${theme.colors.text.color0};
+  font-size: ${theme.fontSize.h0}px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  &:hover {
+    color: ${theme.colors.text.color1};
+  }
 `

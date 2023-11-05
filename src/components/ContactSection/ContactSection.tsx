@@ -4,14 +4,15 @@ import { theme } from '../../styles/theme/theme'
 import {
   ColumnContainer,
   RowContainer,
-  CustomButton,
+  ContactText,
 } from './ContactSection.style'
 import { USER_INFO } from '@/constants'
 import Tag from '../Tag/Tag'
-import { ContentText, TitleText } from '../Layout/Text/general'
-import { Mail, Copy, Phone } from 'lucide-react'
+import { ContentText } from '../Layout/Text/general'
+import { Mail, Phone } from 'lucide-react'
 import { handleCopyToClipboard } from '@/utils'
 import { ToastContainer } from 'react-toastify'
+import { Tooltip } from 'antd'
 
 interface IProps {}
 
@@ -25,14 +26,12 @@ const ContactSection: FC<IProps> = ({}) => {
   }) => {
     return (
       <RowContainer>
-        {icon && icon}
-        <TitleText>{content}</TitleText>
-        <CustomButton
-          type='text'
-          onClick={() => handleCopyToClipboard(content)}
-        >
-          {/* <Copy size={32} /> */}
-        </CustomButton>
+        {icon}
+        <Tooltip title={'Click to Copy'}>
+          <ContactText onClick={() => handleCopyToClipboard(content)}>
+            {content}
+          </ContactText>
+        </Tooltip>
       </RowContainer>
     )
   }

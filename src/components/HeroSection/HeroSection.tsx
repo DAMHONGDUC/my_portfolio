@@ -15,6 +15,8 @@ import { theme } from '../../styles/theme/theme'
 import ActiveIcon from '../ActiveIcon/ActiveIcon'
 import { ContentText } from '../Layout/Text/general'
 import SocialLink from '../SocialLink/SocialLink'
+import { openGoogleMaps } from '@/utils'
+import { Tooltip } from 'antd'
 
 interface IProps {}
 
@@ -34,7 +36,16 @@ const HeroSection: FC<IProps> = ({}) => {
           <ColumnContainer>
             <RowContainer>
               <MapPin color={theme.colors.black} size={24} />
-              <ContentText> {USER_INFO.HERO_SECTION.LOCATION}</ContentText>
+              <Tooltip title={'Open Google Map'}>
+                <ContentText
+                  style={{ cursor: 'pointer' }}
+                  onClick={() =>
+                    openGoogleMaps(USER_INFO.HERO_SECTION.LOCATION)
+                  }
+                >
+                  {USER_INFO.HERO_SECTION.LOCATION}
+                </ContentText>
+              </Tooltip>
             </RowContainer>
 
             <RowContainer>

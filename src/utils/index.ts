@@ -13,3 +13,10 @@ export const handleCopyToClipboard = (content: string) => {
   navigator.clipboard.writeText(content)
   toast('Copied !!!')
 }
+
+export const openGoogleMaps = (location: string) => {
+  const googleMapsURL = `https://www.google.com/maps?q=${encodeURIComponent(
+    location,
+  )}`
+  window.open(googleMapsURL, '_blank')
+}
