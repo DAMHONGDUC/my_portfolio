@@ -5,7 +5,6 @@ import {
   ImageContainer,
   ContentContainer,
   TechContainer,
-  ColumnContainer,
   LinkContainer,
   ButtonCustom,
 } from './ProjectCard.style'
@@ -31,15 +30,13 @@ const ProjectCard: FC<IProps> = ({ data }) => {
       </ImageContainer>
 
       <ContentContainer>
-        <ColumnContainer>
-          <TitleText>{data.name}</TitleText>
-          <ContentText>{data.description}</ContentText>
-          <TechContainer>
-            {data.technologies.map((tech, index) => (
-              <Tag key={index} title={tech} type={TagType.CONTENT} />
-            ))}
-          </TechContainer>
-        </ColumnContainer>
+        <TitleText>{data.name}</TitleText>
+        <ContentText>{data.description}</ContentText>
+        <TechContainer>
+          {data.technologies.map((tech, index) => (
+            <Tag key={index} title={tech} type={TagType.CONTENT} />
+          ))}
+        </TechContainer>
 
         <LinkContainer>
           <ButtonCustom

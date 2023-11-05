@@ -2,12 +2,10 @@ import LogoJavascript from '/public/images/logos/icon-javascript.svg'
 import LogoTypescript from '/public/images/logos/icon-typescript.svg'
 import LogoReact from '/public/images/logos/icon-react.svg'
 import LogoNextjs from '/public/images/logos/icon-nextjs.svg'
-import LogoNodejs from '/public/images/logos/icon-nodejs.svg'
 import LogoFigma from '/public/images/logos/icon-figma.svg'
 import LogoGit from '/public/images/logos/icon-git.svg'
 import LogoFlutter from '/public/images/logos/flutter.svg'
 
-import LogoUpwork from '/public/images/logos/logo-upwork.svg'
 import LogoGreenApex from '/public/images/logos/logo-greenapex.svg'
 import LogoDotnpixel from '/public/images/logos/logo-dotnpixel.svg'
 

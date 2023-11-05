@@ -49,6 +49,7 @@ export const ContentContainer = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   padding: 2rem;
+  gap: 1rem;
 `
 
 export const TechContainer = styled.div`

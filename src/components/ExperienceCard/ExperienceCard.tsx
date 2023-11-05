@@ -3,7 +3,6 @@ import {
   ColumnContainer,
   MainContainer,
   RowContainer,
-  CustomImage,
   ContentContainer,
   ContentText,
   DateText,
@@ -23,16 +22,8 @@ interface IProps {
 const ExperienceCard: FC<IProps> = ({ data, isLast }) => {
   const { windowWidth } = useWindowSize()
 
-  const {
-    logo,
-    summary,
-    logoAlt,
-    position,
-    startDate,
-    endDate,
-    companyName,
-    timeDetail,
-  } = data
+  const { summary, position, startDate, endDate, companyName, timeDetail } =
+    data
 
   return (
     <MainContainer
