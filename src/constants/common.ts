@@ -5,6 +5,7 @@ import LogoNextjs from '/public/images/logos/icon-nextjs.svg'
 import LogoNodejs from '/public/images/logos/icon-nodejs.svg'
 import LogoFigma from '/public/images/logos/icon-figma.svg'
 import LogoGit from '/public/images/logos/icon-git.svg'
+import LogoFlutter from '/public/images/logos/flutter.svg'
 
 import LogoUpwork from '/public/images/logos/logo-upwork.svg'
 import LogoGreenApex from '/public/images/logos/logo-greenapex.svg'
@@ -19,7 +20,10 @@ export const USER_INFO = {
     ID: 'hero',
     IMAGE: 'images/sagar-headshot.jpg',
     MAIN_TITLE: "Hi, I'm Duc",
-    SUB_TITLE: `I am a front-end developer (Javascript/Typescript) with over 1 YOE. I have a passion for designing UI for web and mobile apps. The technologies I use are React Native, Next.js, and Jetpack Compose. Besides that, I also focus on interface design (UI/UX) using Figma.`,
+    SUB_TITLE: `I'm a front-end developer with over 1.5 YOE, specializing in JavaScript and TypeScript.
+    I have the ability to create UI for web and mobile apps. 
+    I'm well-versed in technologies like React Native, Flutter, Next.js and Jetpack Compose. 
+    In addition, I also focus on researching and designing UI/UX using Figma.`,
     LOCATION: 'Ho Chi Minh City, Viet Nam',
     STATUS: 'Available for new projects',
     SOCIAL: {
@@ -58,18 +62,14 @@ export const USER_INFO = {
     ID: 'about-me',
     TAG: 'About me',
     TITLE: 'Curious about me? Here you have it:',
-    CONTENT: `who specializes in full stack development (React.js & Node.js). I
-              am enthusiastic about bringing the technical and visual aspects of
-              digital products to life. User experience, pixel perfect design,
-              and writing clear, readable, highly performant code matters to me.
-              who specializes in full stack development (React.js & Node.js). I
-              am enthusiastic about bringing the technical and visual aspects of
-              digital products to life. User experience, pixel perfect design,
-              and writing clear, readable, highly performant code matters to me.
-              who specializes in full stack development (React.js & Node.js). I
-              am enthusiastic about bringing the technical and visual aspects of
-              digital products to life. User experience, pixel perfect design,
-              and writing clear, readable, highly performant code matters to me.`,
+    CONTENT: `I studied Information System at the University of Science - VNUHCM. 2019 - 2023.
+            
+              I have a passion for developing UI for web and mobile apps. I officially start my career as a mobile developer in July 2022.
+            
+              Regarding mobile app development, I have used frameworks: React Native, Xamarin Forms, and Flutter. In addition, I can also build native Android applications using Java, XML, or Jetpack Compose.
+
+              Regarding web development, I have used frameworks: Next.js and React.js.
+              `,
   },
   SKILL_SECTION: {
     ID: 'skills',
@@ -96,8 +96,8 @@ export const USER_INFO = {
         url: 'https://react.dev/',
       },
       {
-        label: 'Node.js',
-        logo: LogoNodejs,
+        label: 'Flutter',
+        logo: LogoFlutter,
         url: 'https://nodejs.org/en',
       },
       {
@@ -117,37 +117,32 @@ export const USER_INFO = {
     TAG: 'Experience',
     EXPERIENCES: [
       {
-        logo: LogoUpwork,
-        logoAlt: 'Upwork logo',
-        position: 'Independent Freelancer',
-        startDate: '2021',
-        endDate: 'now',
-        summary: [
-          'Worked for various clients like Fiskil, Shosho, Crowe MacKay LLP.',
-          'Worked with a variety of technologies, including React, Next.js, Typescript, Express.js, PostgreSQL, Tailwindcss, Mui, Firebase, Storybook, Cypress, and others.',
-        ],
-      },
-      {
         logo: LogoGreenApex,
-        logoAlt: 'Greenapex logo',
-        position: 'Team Lead',
-        startDate: '2020',
-        endDate: '2021',
+        logoAlt: 'TGL Solutions',
+        companyName: 'TGL Solutions',
+        position: 'Junior Mobile Developer',
+        startDate: '2023',
+        endDate: 'now',
+        timeDetail: 'Mar 2023 - now',
         summary: [
-          'Acted as team lead in different projects.',
-          'Brainstormed new ideas & gathered requirements for internal projects.',
-          'Designed architecture of different projects (frontend + backend).',
-          'Worked on enterprise-level projects for a variety of clients.',
-          'Handled sprint planning & task distribution.',
+          'Full-time',
+          'Work as a front-end developer (mobile apps and web)',
+          'Tech Stack: Next.js, GraphQL, React Native, Redux',
         ],
       },
       {
         logo: LogoDotnpixel,
-        logoAlt: 'Dotnpixel logo',
-        position: 'Full Stack Developer',
-        startDate: '2020',
-        endDate: '2021',
-        summary: ['Worked as a full stack developer (React / Laravel).'],
+        logoAlt: 'Flynk',
+        companyName: 'Flynk',
+        position: 'Fresher Mobile Developer',
+        startDate: '2022',
+        endDate: '2023',
+        timeDetail: 'Jul 2022 - Feb 2023 (8 mos)',
+        summary: [
+          'Full-time',
+          'Work as a mobile developer',
+          'Tech Stack: Xamarin Forms, React Native, Redux',
+        ],
       },
     ],
   },

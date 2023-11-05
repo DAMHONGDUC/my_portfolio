@@ -7,4 +7,6 @@ export interface IExperienceDetails {
   startDate: string
   endDate?: string
   summary: string[]
+  companyName: string
+  timeDetail: string
 }

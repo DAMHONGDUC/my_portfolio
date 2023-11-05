@@ -7,6 +7,8 @@ import {
   ContentContainer,
   ContentText,
   DateText,
+  CompanyNameText,
+  TimeDetailText,
 } from './ExperienceCard.style'
 import { TitleText } from '../Layout/Text/general'
 import { useWindowSize } from '@/hooks/useWindowSize'
@@ -21,7 +23,16 @@ interface IProps {
 const ExperienceCard: FC<IProps> = ({ data, isLast }) => {
   const { windowWidth } = useWindowSize()
 
-  const { logo, summary, logoAlt, position, startDate, endDate } = data
+  const {
+    logo,
+    summary,
+    logoAlt,
+    position,
+    startDate,
+    endDate,
+    companyName,
+    timeDetail,
+  } = data
 
   return (
     <MainContainer
@@ -31,10 +42,15 @@ const ExperienceCard: FC<IProps> = ({ data, isLast }) => {
       }}
     >
       <RowContainer>
-        <CustomImage src={logo} alt={logoAlt} />
+        {/* <CustomImage src={logo} alt={logoAlt} /> */}
 
-        <ColumnContainer style={{ gap: '0.7rem', flex: 1 }}>
-          <TitleText>{position}</TitleText>
+        <ColumnContainer style={{ gap: '0.9rem', flex: 1 }}>
+          <ColumnContainer>
+            <TitleText>{position}</TitleText>
+            <CompanyNameText>{companyName}</CompanyNameText>
+            <TimeDetailText>{timeDetail}</TimeDetailText>
+          </ColumnContainer>
+
           <ContentContainer>
             {summary.map((e, index) => (
               <ContentText key={index}>{e}</ContentText>

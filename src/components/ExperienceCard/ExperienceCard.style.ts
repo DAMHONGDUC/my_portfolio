@@ -44,6 +44,20 @@ export const ContentContainer = styled.ul`
   }
 `
 
-export const ContentText = styled.li``
+export const ContentText = styled.li`
+  font-size: ${theme.fontSize.h5}px;
+  color: ${theme.colors.text.color1};
+`
 
-export const DateText = styled(Text)``
+export const DateText = styled(Text)`
+  color: ${theme.colors.text.color1};
+`
+
+export const CompanyNameText = styled(Text)`
+  font-size: ${theme.fontSize.h4}px;
+`
+
+export const TimeDetailText = styled(Text)`
+  font-size: ${theme.fontSize.h6}px;
+  color: ${theme.colors.text.color1};
+`

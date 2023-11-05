@@ -23,7 +23,9 @@ const AboutMeSection: FC<IProps> = ({}) => {
           <ImageWithShadow localSource={USER_INFO.HERO_SECTION.IMAGE} />
           <ColumnContainer>
             <TitleText>{USER_INFO.ABOUT_ME_SECTION.TITLE}</TitleText>
-            <ContentText>{USER_INFO.ABOUT_ME_SECTION.CONTENT}</ContentText>
+            <ContentText style={{ whiteSpace: 'pre-line' }}>
+              {USER_INFO.ABOUT_ME_SECTION.CONTENT}
+            </ContentText>
           </ColumnContainer>
         </RowContainer>
       </ColumnContainer>
