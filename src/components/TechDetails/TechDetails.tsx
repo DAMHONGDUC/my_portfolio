@@ -1,6 +1,5 @@
 import { FC } from 'react'
 import { TechDetailContainer, CustomImage } from './TechDetails.style'
-import Link from 'next/link'
 import { ITechDetails } from '@/interfaces/i-techDetails'
 import { ContentText } from '../Layout/Text/general'
 import { openURLInNewTab } from '@/utils'
