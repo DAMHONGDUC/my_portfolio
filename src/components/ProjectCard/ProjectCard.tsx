@@ -15,6 +15,7 @@ import { IProjectDetails } from '@/interfaces/i-project-detail'
 import Tag from '../Tag/Tag'
 import { TagType } from '@/constants'
 import { openURLInNewTab } from '@/utils'
+import { isMobile } from 'react-device-detect'
 
 interface IProps {
   data: IProjectDetails
@@ -24,7 +25,7 @@ const ProjectCard: FC<IProps> = ({ data }) => {
   const { windowWidth } = useWindowSize()
 
   return (
-    <RowContainer style={{ width: windowWidth * 0.7 }}>
+    <RowContainer style={{ width: windowWidth * (isMobile ? 0.9 : 0.7) }}>
       <ImageContainer>
         <ImageCustom src={data.previewImage} alt={data.name}></ImageCustom>
       </ImageContainer>

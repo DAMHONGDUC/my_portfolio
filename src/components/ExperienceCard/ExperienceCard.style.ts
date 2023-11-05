@@ -10,6 +10,10 @@ export const RowContainer = styled.div`
   display: flex;
   flex-direction: row;
   gap: 5rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 export const ColumnContainer = styled.div`

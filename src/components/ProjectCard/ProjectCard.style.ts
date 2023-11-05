@@ -9,6 +9,10 @@ export const RowContainer = styled.div`
   flex-direction: row;
   box-shadow: 0 4px 6px -1px ${theme.colors.card.boxShadow1};
   border-radius: 0.75rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 export const ImageContainer = styled.div`
@@ -30,6 +34,11 @@ export const ImageCustom = styled(Image)`
 
   &:hover {
     transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    width: 18rem;
+    height: 16rem;
   }
 `
 

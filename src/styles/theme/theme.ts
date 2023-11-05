@@ -1,3 +1,25 @@
+import { isMobile } from 'react-device-detect'
+
+const fontSizeWeb = {
+  h0: 26,
+  h1: 24,
+  h2: 22,
+  h3: 20,
+  h4: 18,
+  h5: 16,
+  h6: 14,
+}
+
+const fontSizeMobile = {
+  h0: 23,
+  h1: 21,
+  h2: 19,
+  h3: 17,
+  h4: 15,
+  h5: 13,
+  h6: 11,
+}
+
 export const theme = {
   colors: {
     primary: '#FFFFFF',
@@ -24,13 +46,5 @@ export const theme = {
       boxShadow2: '#0000000f',
     },
   },
-  fontSize: {
-    h0: 26,
-    h1: 24,
-    h2: 22,
-    h3: 20,
-    h4: 18,
-    h5: 16,
-    h6: 14,
-  },
+  fontSize: isMobile ? fontSizeMobile : fontSizeWeb,
 }

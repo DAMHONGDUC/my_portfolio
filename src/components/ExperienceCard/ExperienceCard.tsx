@@ -11,6 +11,7 @@ import {
 import { TitleText } from '../Layout/Text/general'
 import { useWindowSize } from '@/hooks/useWindowSize'
 import { IExperienceDetails } from '@/interfaces/i-experienceDetails'
+import { isMobile } from 'react-device-detect'
 
 interface IProps {
   data: IExperienceDetails
@@ -24,7 +25,10 @@ const ExperienceCard: FC<IProps> = ({ data, isLast }) => {
 
   return (
     <MainContainer
-      style={{ width: windowWidth * 0.6, marginBottom: isLast ? 0 : '2rem' }}
+      style={{
+        width: windowWidth * (isMobile ? 0.9 : 0.6),
+        marginBottom: isLast ? 0 : '2rem',
+      }}
     >
       <RowContainer>
         <CustomImage src={logo} alt={logoAlt} />

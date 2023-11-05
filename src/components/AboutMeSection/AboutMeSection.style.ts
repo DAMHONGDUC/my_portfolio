@@ -12,4 +12,8 @@ export const RowContainer = styled.div`
   flex: 1;
   flex-direction: row;
   gap: 5rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `

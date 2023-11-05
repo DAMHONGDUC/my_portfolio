@@ -25,13 +25,13 @@ const ContactSection: FC<IProps> = ({}) => {
   }) => {
     return (
       <RowContainer>
-        {icon}
+        {icon && icon}
         <TitleText>{content}</TitleText>
         <CustomButton
           type='text'
           onClick={() => handleCopyToClipboard(content)}
         >
-          <Copy size={32} />
+          {/* <Copy size={32} /> */}
         </CustomButton>
       </RowContainer>
     )
