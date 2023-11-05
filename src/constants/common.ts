@@ -91,12 +91,12 @@ export const USER_INFO = {
       {
         label: 'React Native',
         logo: LogoReact,
-        url: 'https://react.dev/',
+        url: 'https://reactnative.dev/',
       },
       {
         label: 'Flutter',
         logo: LogoFlutter,
-        url: 'https://nodejs.org/en',
+        url: 'https://flutter.dev/',
       },
       {
         label: 'Figma',
