@@ -11,13 +11,13 @@ const fontSizeWeb = {
 }
 
 const fontSizeMobile = {
-  h0: 23,
-  h1: 21,
-  h2: 19,
-  h3: 17,
-  h4: 15,
-  h5: 13,
-  h6: 11,
+  h0: 24,
+  h1: 22,
+  h2: 20,
+  h3: 18,
+  h4: 16,
+  h5: 14,
+  h6: 12,
 }
 
 export const theme = {

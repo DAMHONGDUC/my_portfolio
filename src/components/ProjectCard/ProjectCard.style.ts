@@ -36,7 +36,7 @@ export const ImageCustom = styled(Image)`
     transform: scale(1.1);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     width: 18rem;
     height: 16rem;
   }
