@@ -51,7 +51,7 @@ export const NavLinkContainer = styled.ul`
   align-items: center;
   list-style-type: none;
 `
-export const NavLinkItem = styled(Text)`
+export const NavLinkText = styled(Text)`
   font-size: ${theme.fontSize.h4}px;
   line-height: 1.5rem;
   font-weight: 500;

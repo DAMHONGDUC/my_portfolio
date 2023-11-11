@@ -3,16 +3,16 @@ import {
   HeaderContainer,
   NavLinkWrapper,
   NavLinkContainer,
-  NavLinkItem,
+  NavLinkText,
   RowContainer,
   DownloadCVButton,
 } from './Header.style'
-import Link from 'next/link'
 import { USER_INFO } from '@/constants'
 import { theme } from '@/styles/theme/theme'
 import useScroll from '@/hooks/useScroll'
 import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher'
 import { Divider } from 'antd'
+import Link from 'next/link'
 
 const Header = () => {
   const scrolled = useScroll(40)
@@ -24,10 +24,10 @@ const Header = () => {
   return (
     <HeaderCustom scrolled={scrolled}>
       <HeaderContainer>
-        <Link href='/'>
-          <NavLinkItem style={{ fontSize: theme.fontSize.h1 }}>
+        <Link href={'/'}>
+          <NavLinkText style={{ fontSize: theme.fontSize.h1 }}>
             {USER_INFO.NAV_BAR.LOGO}
-          </NavLinkItem>
+          </NavLinkText>
         </Link>
         <RowContainer>
           <NavLinkWrapper>
@@ -35,7 +35,7 @@ const Header = () => {
               {USER_INFO.NAV_BAR.NAV_LINKS.map((link, index) => (
                 <li key={index}>
                   <Link href={link.href}>
-                    <NavLinkItem>{link.label}</NavLinkItem>
+                    <NavLinkText>{link.label}</NavLinkText>
                   </Link>
                 </li>
               ))}
