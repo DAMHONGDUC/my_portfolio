@@ -39,12 +39,16 @@ export const USER_INFO = {
         href: '#about-me',
       },
       {
-        label: 'Work',
-        href: '#work',
+        label: 'Skills',
+        href: '#skills',
       },
       {
-        label: 'Testimonials',
-        href: '#testimonials',
+        label: 'Experience',
+        href: '#experience',
+      },
+      {
+        label: 'Project',
+        href: '#project',
       },
       {
         label: 'Contact',
