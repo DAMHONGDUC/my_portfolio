@@ -51,7 +51,8 @@ export const ContentText = styled.li`
 `
 
 export const DateText = styled(Text)`
-  color: ${theme.colors.text.color1};
+  // color: ${theme.colors.text.color1};
+  color: #1677ff;
 `
 
 export const CompanyNameText = styled(Text)`
