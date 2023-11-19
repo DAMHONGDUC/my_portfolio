@@ -1,7 +1,7 @@
 import { RowContainer, SocialButton } from './SocialLink.style'
 import { ISocialLink } from '@/interfaces/i-socialLink'
 import { USER_INFO } from '@/constants'
-import { Github, Facebook, Instagram, Figma } from 'lucide-react'
+import { Github, Facebook, Instagram, Figma, Linkedin } from 'lucide-react'
 import { theme } from '../../styles/theme/theme'
 import { openURLInNewTab } from '@/utils'
 
@@ -20,12 +20,18 @@ const SOCIALS_LINK: ISocialLink[] = [
   },
   {
     id: 3,
+    key: 'Linkedin',
+    component: <Linkedin color={theme.colors.black} size={24} />,
+    url: USER_INFO.HERO_SECTION.SOCIAL.LINKEDIN,
+  },
+  {
+    id: 4,
     key: 'Facebook',
     component: <Facebook color={theme.colors.black} size={24} />,
     url: USER_INFO.HERO_SECTION.SOCIAL.FACEBOOK,
   },
   {
-    id: 4,
+    id: 5,
     key: 'Instagram',
     component: <Instagram color={theme.colors.black} size={24} />,
     url: USER_INFO.HERO_SECTION.SOCIAL.INSTAGRAM,

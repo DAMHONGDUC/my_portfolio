@@ -20,7 +20,7 @@ const AboutMeSection: FC<IProps> = ({}) => {
         <Tag title={USER_INFO.ABOUT_ME_SECTION.TAG} />
 
         <RowContainer style={{ justifyContent: 'space-between' }}>
-          <ImageWithShadow localSource={USER_INFO.HERO_SECTION.IMAGE} />
+          <ImageWithShadow localSource={USER_INFO.ABOUT_ME_SECTION.IMAGE} />
           <ColumnContainer>
             <TitleText>{USER_INFO.ABOUT_ME_SECTION.TITLE}</TitleText>
             <ContentText style={{ whiteSpace: 'pre-line' }}>

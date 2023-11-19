@@ -1,7 +1,7 @@
-import Image from 'next/image'
 import styled from 'styled-components'
 import { theme } from '../../styles/theme/theme'
 import { Button } from 'antd'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 export const RowContainer = styled.div`
   display: flex;
@@ -23,7 +23,7 @@ export const ImageContainer = styled.div`
   display: flex;
 `
 
-export const ImageCustom = styled(Image)`
+export const ImageCustom = styled(LazyLoadImage)`
   width: 25rem;
   height: 20rem;
   border-radius: 0.75rem;

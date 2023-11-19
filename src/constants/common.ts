@@ -9,12 +9,10 @@ import LogoFlutter from '/public/images/logos/flutter.svg'
 import LogoGreenApex from '/public/images/logos/logo-greenapex.svg'
 import LogoDotnpixel from '/public/images/logos/logo-dotnpixel.svg'
 
-import ProjectWingie from '/public/images/project-wingie.png'
-
 export const USER_INFO = {
   HERO_SECTION: {
     ID: 'hero',
-    IMAGE: 'images/sagar-headshot.jpg',
+    IMAGE: 'images/avt_1.jpg',
     MAIN_TITLE: "Hi, I'm Duc",
     SUB_TITLE: `I'm a front-end developer with over 1.5 YOE, specializing in JavaScript and TypeScript.
     I have the ability to create UI for web and mobile apps. 
@@ -27,6 +25,7 @@ export const USER_INFO = {
       FACEBOOK: 'https://www.facebook.com/',
       INSTAGRAM: 'https://www.instagram.com/',
       FIGMA: 'https://www.figma.com/@hongdduc',
+      LINKEDIN: 'https://www.linkedin.com/in/dam-hong-duc/',
     },
   },
   NAV_BAR: {
@@ -62,6 +61,7 @@ export const USER_INFO = {
     ID: 'about-me',
     TAG: 'About me',
     TITLE: 'Curious about me? Here you have it:',
+    IMAGE: 'images/avt_2.jpg',
     CONTENT: `I studied Information System at the University of Science - VNUHCM. 2019 - 2023.
             
               I have a passion for developing UI for web and mobile apps. I officially start my career as a mobile developer in July 2022.
@@ -154,10 +154,10 @@ export const USER_INFO = {
         name: 'dSound',
         description: 'Stream and listen to music online for free with dSound',
         url: 'https://www.wingie.com',
-        previewImage: ProjectWingie,
+        previewImage: 'images/dSound_logo.png',
         technologies: ['Javacript', 'Redux', 'Firebase', 'Zing MP3 API'],
-        source: 'https://www.youtube.com/',
-        demo: 'https://www.youtube.com/',
+        source: 'https://github.com/DAMHONGDUC/dSound',
+        demo: 'https://www.youtube.com/watch?v=72bvRZppxw8&t=107s',
       },
     ],
   },
