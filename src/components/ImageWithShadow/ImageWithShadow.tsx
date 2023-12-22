@@ -1,11 +1,5 @@
 import React, { FC } from 'react'
-import {
-  ImageWrapper,
-  ImageContainer,
-  CustomImage,
-  ShadowContainer,
-  CustomImage2,
-} from './ImageWithShadow.style'
+import { ImageWrapper, CustomImage2 } from './ImageWithShadow.style'
 
 interface IProps {
   localSource: string
