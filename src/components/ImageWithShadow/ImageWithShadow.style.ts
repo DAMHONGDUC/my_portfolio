@@ -56,3 +56,15 @@ export const ShadowContainer = styled.div`
     width: 280px;
   }
 `
+
+export const CustomImage2 = styled(LazyLoadImage)`
+  object-fit: cover;
+  height: 320px;
+  width: 280px;
+  border-radius: 0.25rem;
+
+  @media (max-width: 768px) {
+    height: 280px;
+    width: 240px;
+  }
+`
