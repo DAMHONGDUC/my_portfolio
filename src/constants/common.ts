@@ -14,10 +14,7 @@ export const USER_INFO = {
     ID: 'hero',
     IMAGE: 'images/avt_1.jpg',
     MAIN_TITLE: "Hi, I'm Duc",
-    SUB_TITLE: `I'm a front-end developer with over 1.5 YOE, specializing in JavaScript and TypeScript.
-    I have the ability to create UI for web and mobile apps. 
-    I'm well-versed in technologies like React Native, Flutter, Next.js and Jetpack Compose. 
-    In addition, I also focus on researching and designing UI/UX using Figma.`,
+    SUB_TITLE: `I'm a front-end developer with over 1.5 YOE, specializing in JavaScript and TypeScript. I have a passion for creating UI for web and mobile apps. I'm well-versed in technologies like React Native, Flutter and Next.js. Additionally, I focus on researching and learning new technologies like SwiftUI and Jetpack Compose.`,
     LOCATION: 'Ho Chi Minh City, Viet Nam',
     STATUS: 'Available for new projects',
     SOCIAL: {
