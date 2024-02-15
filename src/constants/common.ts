@@ -120,7 +120,7 @@ export const USER_INFO = {
         position: 'Junior Mobile Developer',
         startDate: '2023',
         endDate: 'now',
-        timeDetail: 'Mar 2023 - now',
+        timeDetail: 'Jan 2023 - now (1 yr 2 mos)',
         summary: [
           'Full-time',
           'Work as a front-end developer (mobile apps and web)',
@@ -134,7 +134,7 @@ export const USER_INFO = {
         position: 'Fresher Mobile Developer',
         startDate: '2022',
         endDate: '2023',
-        timeDetail: 'Jul 2022 - Feb 2023 (8 mos)',
+        timeDetail: 'Jul 2022 - Nov 2023 (5 mos)',
         summary: [
           'Full-time',
           'Work as a mobile developer',
